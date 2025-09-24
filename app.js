@@ -30,9 +30,14 @@ Example: isAdult(21) should return 'Adult'.
 Complete the exercise in the space below:
 */
 
-function isAdult(age)
-    if age >= 18 "Adult"
-    "Minor"
+function isAdult(age) {
+    if (age >= 18) {
+    return "Adult";
+    }
+    else {
+    return "Minor";
+    }
+}
 
 console.log('Exercise 2 Result:', isAdult(21));
 
@@ -49,7 +54,12 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-function isCharAVowel()
-    
+function isCharAVowel(c) {
+   if (c === "a" || c === "e" || c === "i" || c === "o" || c === "u")
+    return "true";
+else {
+    return "false";
+}
+}
 
 console.log('Exercise 3 Result:', isCharAVowel("a"));
