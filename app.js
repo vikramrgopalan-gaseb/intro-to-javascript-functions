@@ -159,3 +159,31 @@ function convertTemperature (temperature, scale) {
 
 console.log('Exercise 8 Result:', convertTemperature(32, "F"));
 
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+function basicCalculator (num_A, num_B, operation) {
+    if (operation === 'multiply')
+        return (num_A * num_B);
+        else if (operation === 'divide')
+                        return (num_A / num_B);
+                   else if (operation === 'add')
+                                return (num_A + num_B);
+                           else (operation === 'subtract')
+                                        return (num_A - num_B);
+}
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
